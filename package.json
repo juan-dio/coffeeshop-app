@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "tailwindcss:watch": "npx tailwindcss -i ./public/src/input.css -o ./public/css/output.css --watch"
   },
   "devDependencies": {
     "axios": "^1.6.4",
@@ -26,6 +27,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "feather-icons": "^4.29.1",
-    "postcss": "^8.4.33"
+    "postcss": "^8.4.33",
+    "prettier-plugin-blade": "^2.1.19"
   }
 }
