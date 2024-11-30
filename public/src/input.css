@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.invisible {
+  @apply hidden;
+}
+
+.navbar-fixed {
+  @apply fixed h-14;
+}
+
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-sky-500;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+.error-text {
+  @apply text-red-600;
+}
+
+.error-border {
+  @apply border-red-600;
+}
+
+.nav-active {
+  @apply rotate-180;
+}
